@@ -18,11 +18,11 @@ public class UserEntity {
 	private String lastName;
 	private String email;
 	private String password;
-//	private String contactNum;
+	private String contactNum;
 //	private String city;
-//	private String bornYear;
+	private String bornYear;
 	private String gender;
-//	private String role;// member,security,chairman,admin
+	private String role;// member,security,chairman,admin
 
 	public Integer getUserId() {
 		return userId;
@@ -64,13 +64,13 @@ public class UserEntity {
 		this.password = password;
 	}
 
-//	public String getContactNum() {
-//		return contactNum;
-//	}
-//
-//	public void setContactNum(String contactNum) {
-//		this.contactNum = contactNum;
-//	}
+	public String getContactNum() {
+		return contactNum;
+	}
+
+	public void setContactNum(String contactNum) {
+		this.contactNum = contactNum;
+	}
 
 //	public String getCity() {
 //		return city;
@@ -80,13 +80,13 @@ public class UserEntity {
 //		this.city = city;
 //	}
 
-//	public String getBornYear() {
-//		return bornYear;
-//	}
-//
-//	public void setBornYear(String bornYear) {
-//		this.bornYear = bornYear;
-//	}
+	public String getBornYear() {
+		return bornYear;
+	}
+
+	public void setBornYear(String bornYear) {
+		this.bornYear = bornYear;
+	}
 
 	public String getGender() {
 		return gender;
@@ -96,12 +96,12 @@ public class UserEntity {
 		this.gender = gender;
 	}
 
-//	public String getRole() {
-//		return role;
-//	}
-//
-//	public void setRole(String role) {
-//		this.role = role;
-//	}
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 
 }

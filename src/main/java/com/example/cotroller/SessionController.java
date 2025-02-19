@@ -1,6 +1,7 @@
 package com.example.cotroller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -18,6 +19,9 @@ public class SessionController {
 
 	@Autowired
 	UserRepository repositoryUser;
+	
+	@Autowired
+	PasswordEncoder encoder; 
 
 	@GetMapping(value = { "/", "login" } )
 	public String login(String email, String password) {
@@ -31,8 +35,17 @@ public class SessionController {
 
 	@PostMapping("saveuser")
 	public String saveuser(UserEntity userEntity) {
-		repositoryUser.save(userEntity);
-		serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
+		
+//		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(5);     //salt
+//------->  Not use this line new keyword because it's gain more memory		
+		
+		String encPassword = encoder.encode(userEntity.getPassword());
+		userEntity.setPassword(encPassword);
+		
+		userEntity.setRole("USER");
+	
+		repositoryUser.save(userEntity);	
+//		serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
 		return "Login";
 	}
 

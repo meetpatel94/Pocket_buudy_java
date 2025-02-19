@@ -107,15 +107,15 @@ body {
                 </select>
             </div> 
 
-            <!-- <div class="form-group">
+             <div class="form-group">
                 <label for="dateOfBirth">Date Of Birth*</label>
                 <input type="date" id="dateOfBirth" name="bornYear" required>
-            </div> --> 
+            </div> 
 
-            <!-- <div class="form-group">
+             <div class="form-group">
                 <label for="contactNum">Contact No.</label>
                 <input type="tel" id="contactNum" name="contactNum" required>
-            </div>  -->
+            </div>  
             <a href="login"> <button type="submit" class="submit-btn">Submit</button></a>
             <a href="login"><p>Already Have an Account ?</p></a>
         </form>
