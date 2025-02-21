@@ -57,6 +57,11 @@ body {
     border-color: #1a73e8;
     box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
 }
+.message{
+    margin-top: 5px;
+    text-align: center;
+    color: red;
+}
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -86,18 +91,20 @@ body {
 </style>
 </head>
 <body>
+<form action="authenticate" method="post">
     <div class="container">
         <div class="form-box" id="loginForm">
             <h2 class="title">Login</h2>        
                 <div class="input-group">
                     <label for="email">Email ID</label>
-                    <input type="email" id="email" name="name" required placeholder="Enter your email">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
                 </div>
                 <div class="input-group">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required placeholder="Enter your password">
                 </div>
                 <button type="submit" class="submit-btn">Login</button>
+                <div class="message"></div>
                 <div class="signup-link">
                     <a href="signup" id="showForgotForm">Don't have an Account? <strong>SignUp</strong></a>
                 </div> 
@@ -106,6 +113,7 @@ body {
                 </div> 
               </div>
          </div> 
- </form>   
+ </form> 
+   ${error}
 </body>
 </html>
