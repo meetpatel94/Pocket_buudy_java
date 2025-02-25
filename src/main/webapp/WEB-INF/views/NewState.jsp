@@ -77,7 +77,7 @@ input, select {
 <body>
     <form action="savestate" method="post">
             <div class="signup-title">New State</div>
- <div class="form-group">
+            <div class="form-group">
                 <label for="firstName">FirstName</label>
                 <input type="text" id="firstName" name="firstName" required>
             </div>
@@ -121,8 +121,7 @@ input, select {
                 <label for="contactNum">Contact No.</label>
                 <input type="tel" id="contactNum" name="contactNum" required>
             </div> 
-            <a href="login"> <button type="submit" class="submit-btn">Submit</button></a>
-              
-            </form>
+            <a href="login"> <button type="submit" class="submit-btn">Submit</button></a> 
+       </form>
 </body>
 </html>

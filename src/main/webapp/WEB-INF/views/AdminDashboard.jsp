@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Home page</title>
+<title>Admin Dashboard</title>
 </head>
 <body>
-<h1>Home</h1><br>
+<h1>Admin Dashboard</h1><br>
 <h3>Welcome, ${user.firstName } </h3><br><br>
 <a href="logout">Log Out</a>
 </body>
