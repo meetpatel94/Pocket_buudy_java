@@ -48,7 +48,7 @@ public class SessionController {
 		userEntity.setRole("USER");
 	
 		repositoryUser.save(userEntity);	
-//		serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
+	//	serviceMail.sendWelcomeMail(userEntity.getEmail(), userEntity.getFirstName());
 		return "Login";
 	}
 	

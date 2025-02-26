@@ -6,19 +6,19 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "city")
+@Table(name = "cities")
 public class CityEntity {
     
 	@Id
 	@GeneratedValue
-	private Integer CityId;
+	private Integer cityId;
 	private String  cityName;
 	public Integer getCityId() {
-		return CityId;
+		return cityId;
 	}
 	public void setCityId(Integer cityId) {
-		CityId = cityId;
-	}
+		this.cityId = cityId;
+	}	
 	public String getCityName() {
 		return cityName;
 	}

@@ -13,60 +13,20 @@ public class StateEntity {
 	@Id  //for primary key
 	@GeneratedValue
 	private Integer userId;//primary key 
-	private String firstName;
-	private String lastName;
-	private String email;
-	private String password;
-	private String bornYear;
-	private String gender;
-	private String contacNum;
-	public Integer getUserId() {
-		return userId;
+    private String stateName;
+    private Integer stateId;
+	public String getStateName() {
+		return stateName;
 	}
-	public void setUserId(Integer userId) {
-		this.userId = userId;
+	public void setStateName(String stateName) {
+		this.stateName = stateName;
 	}
-	public String getFirstName() {
-		return firstName;
+	public Integer getStateId() {
+		return stateId;
 	}
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+	public void setStateId(Integer stateId) {
+		this.stateId = stateId;
 	}
-	public String getLastName() {
-		return lastName;
-	}
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
-	}
-	public String getGender() {
-		return gender;
-	}
-	public void setGender(String gender) {
-		this.gender = gender;
-	}
-	public String getContacNum() {
-		return contacNum;
-	}
-	public void setContacNum(String contacNum) {
-		this.contacNum = contacNum;
-	}
-	public String getBornYear() {
-		return bornYear;
-	}
-	public void setBornYear(String bornYear) {
-		this.bornYear = bornYear;
-	}
+
 	
 }
